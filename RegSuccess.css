@@ -1,0 +1,18 @@
+header{
+    background-color: darkblue;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+body{
+    background-image:  url(images/outer-space.jpg);
+}
+.pad{
+    min-height: 100px;
+}
+.regSuccess{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

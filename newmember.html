@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Member Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="newmember.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body class="grid-container">
+    <header>
+       <a href="qacon.html">Home</a> | <a href="newmember.html">New Members</a> | <a href="Login.html">Login</a> | <a href="SeeMembers.html">See Members</a> | <a href="program.html">Program</a>
+    </header>
+    <div class="pad">
+    </div>
+    <div class="leftpad">
+    </div>
+    <div class="sign-up">
+        <h1 id="signup">Sign Up</h1>
+    <form id="signupform" onsubmit="return handleSubmit(this)">
+         <div>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            </div>
+        <div>
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName">
+        </div>
+        <div >
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+        </div>
+        <div>
+            <label for="moniker">Moniker</label>
+        
+            <input type="text" id="moniker">
+        </div>
+       
+
+       
+            <div >
+                <label for="password">Password</label>
+            
+                <input type="text" id="password">
+            </div>
+             <div>
+            <label for="showRealName">
+                Show Real Name
+            </label>
+            <input id = "showRealName" type="checkbox">
+        </div>
+            <div>
+                <button class="btn btn-success">Submit</button>
+    </form>
+    </div>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script  async defer src="newmember.js"></script>
+</body>
+
+</html>

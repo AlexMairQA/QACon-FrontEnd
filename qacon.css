@@ -1,0 +1,59 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  
+}
+
+
+
+.namecon {
+  background-image: radial-gradient(red, blue, green);
+ 
+  
+  padding: 20px;
+  color: rgba(0, 255, 255, 0.8);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 4px 4px  green;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
+}
+.nameconText{
+  margin: 8%;
+  
+
+}
+
+.guest-pane {
+  background-color: black;  
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+   background-image: url(images/falcon.jpg);
+
+}
+
+.grid-item {
+  
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 30px;
+  text-align: center;
+  height: 450px;
+}
+
+.grid-item.top-left-image {
+        background-image: url(images/star_trek_swingers.webp);
+    background-size: cover;
+    
+}
+
+.grid-item.top-right-image {
+       background-image: url(images/hugo.jpg);
+    background-size: cover;
+    
+}

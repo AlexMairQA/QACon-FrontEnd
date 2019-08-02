@@ -1,0 +1,8 @@
+header{
+    background-color: paleturquoise;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
