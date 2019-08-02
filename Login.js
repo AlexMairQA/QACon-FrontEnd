@@ -4,6 +4,7 @@ function makeRequest(form) {
     let req = new XMLHttpRequest();
     let member = "";
     let password = "";
+    let email="";
     // for(field of form){
     //     if(field.id="password")
     //         {
@@ -11,8 +12,9 @@ function makeRequest(form) {
     //         }
     // }
     password = document.getElementById("password").value;
+    email=document.getElementById("email").value;
     console.log(password);
-    req.open('GET', 'http://35.242.175.183:8081/QaProject/api/member/getAccount/Alex/Mair/' + password);
+    req.open('GET', 'http://35.242.175.183:8081/QaProject/api/member/getAccount/'+email+'/' + password);
     req.onload = () => {
 
         member = JSON.parse(req.responseText);
