@@ -61,4 +61,5 @@ function removeAccount() {
     }
 
     req.send();
+    window.location="QACon.html";
 }

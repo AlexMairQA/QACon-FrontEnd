@@ -1,6 +1,7 @@
 header{
     background-color: paleturquoise;
     color: white;
+     font-family: Courier New, Courier, monospace;
     font-size: 30px;
     padding: 10px;
     grid-column-start: 1;

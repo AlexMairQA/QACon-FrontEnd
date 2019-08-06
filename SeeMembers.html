@@ -6,26 +6,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Member List</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Header.css">
+        <link rel="stylesheet" href="seeMembers.css">
+
     </head>
-    <body>
+    <body class="wholePage">
          <header>
        <a href="qacon.html">Home</a> | <a href="newmember.html">New Members</a> | <a href="Login.html">Login</a> | <a href="">See Members</a> | <a href="program.html">Program</a>
     </header>
-    <form>
-        <input type="text" id="memberSearch">
-    </form>
-    <button>Member Search</button>
-    <button onclick='makeRequest()'>Show All Members</button>
+    
+    
     <div id="parent">
     </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="SeeMembers.js" async defer></script>
+        <script src="SeeMembers.js"></script>
+        <script>makeRequest()</script>
     </body>
 </html>

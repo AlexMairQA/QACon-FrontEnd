@@ -21,29 +21,42 @@ function makeRequest() {
 
 function loopThruMembers(members)
 {
+    
  for (member of members) {
+ let parent = document.getElementById("parent");
+     let memberDiv=document.createElement('div');
+memberDiv.className="conMember";
+let headerDiv=document.createElement('div');
+headerDiv.className="memberHeader";
+memberDiv.append(headerDiv);
+let memberH=document.createElement('h1');
+memberH.innerText="** QAC Member **";
+headerDiv.append(memberH);
+
+parent.append(memberDiv);
+ 
+            let newH = document.createElement('h1');
             let { showRealName } = member;
             if (showRealName) {
-                displayMember(member);
+                displayMember(member, newH);
             }
             else {
-                displayMoniker(member);
+                displayMoniker(member, newH);
             }
-           
+           memberDiv.append(newH);
         }
 }
 
-function displayMember({firstName, lastName, moniker}){
-     let parent = document.getElementById("parent");
-            let newH = document.createElement('h1');
+function displayMember({firstName, lastName, moniker}, newH){
+    
             newH.innerText = firstName + " " + lastName + " " + moniker;
-            parent.append(newH);
+           
 }
 
-function displayMoniker({moniker})
+function displayMoniker({moniker}, newH)
 {
      let parent = document.getElementById("parent");
-            let newH = document.createElement('h1');
+            
             newH.innerText = "*** ***  " + moniker;
             parent.append(newH);
 }

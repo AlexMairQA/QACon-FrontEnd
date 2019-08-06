@@ -1,0 +1,15 @@
+body{
+    background: navy;
+}
+
+.conMember{
+    background: lightgray;
+    margin: 20px;
+     
+}
+.memberHeader{
+    background-image: linear-gradient(turquoise, white);
+    color: darkblue;
+   font-family: Tahoma;
+    text-align: center;
+}
