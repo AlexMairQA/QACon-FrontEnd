@@ -26,10 +26,12 @@
     <div id="parent">
     </div>
     <footer>
+        <button onclick="updateAccount()">Update My Account</button>
         <button onclick="removeAccount()">Delete My Account</button>
     </footer>
     <script src="MemberPage.js"></script>
     <script>
+       
         displayAccountDetails(JSON.parse(sessionStorage.getItem("member")));
     </script>
 </body>

@@ -14,7 +14,7 @@
 
 .pad{
      grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 4;
     min-height: 100px;
 }
 .sign-up{
@@ -28,8 +28,8 @@
 form{
     display: inline-block;
     font-size: 30px;
-    background-image: linear-gradient(powderblue,gray,white);
-    opacity: 1 !important;
+    background-image: linear-gradient(to right, powderblue,gray,white);
+    opacity: 1 ;
 }
 form div{
     padding: 10px;

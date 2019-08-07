@@ -20,5 +20,5 @@ console.log(req.responseText);
     req.setRequestHeader('Content-Type', 'application/json');
     req.send(JSON.stringify(data));
     console.log("send");
-    return false;
+    
 }
