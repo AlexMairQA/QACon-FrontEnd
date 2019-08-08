@@ -92,15 +92,16 @@ function updateAccount(){
     password:pass_word,
     showRealName:"true"
 }
-    
-    req.open('POST', 'http://35.242.175.183:8081/QaProject/api/member/updateMember');
-    req.onload = () => {
+ let {idMember}=JSON.parse(sessionStorage.getItem("member"));
 
-        console.log("TRRRR");
+    req.open('POST', 'http://35.242.175.183:8081/QaProject/api/member/updateMember',  idMember);
+    req.onload = () => {
+   
+         console.log(idMember);   
         
         
     };
-    let {idMember}=JSON.parse(sessionStorage.getItem("member"));
+    
    
-    req.send(JSON.stringify(member), idMember);
+    req.send(JSON.stringify(member));
 }
